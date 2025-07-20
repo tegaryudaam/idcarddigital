@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KTP Digital - Hacker Style</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #00ff9f;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .ktp-card {
+      background-color: #111;
+      border: 2px solid #00ff9f;
+      border-radius: 10px;
+      padding: 20px;
+      width: 600px;
+      box-shadow: 0 0 25px #00ff9f66;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .ktp-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #00ffe0;
+      text-align: left;
+      letter-spacing: 1px;
+      border-bottom: 1px dashed #00ff9f;
+      padding-bottom: 8px;
+    }
+
+    .ktp-info {
+      flex: 1;
+    }
+
+    .ktp-line {
+      margin: 8px 0;
+    }
+
+    .label {
+      color: #999;
+    }
+
+    .value {
+      color: #00ff9f;
+      font-weight: bold;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 2px dashed #00ff9f;
+      box-shadow: 0 0 10px #00ff9f55;
+    }
+
+    .glow {
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00ff9f; }
+      to { text-shadow: 0 0 20px #00ff9f; }
+    }
+  </style>
+</head>
+<body>
+  <div class="ktp-card">
+    <img src="https://i.ibb.co/YTjW3vF/hacker-face.png" alt="Foto Misterius" class="profile-pic">
+    <div class="ktp-info">
+      <div class="ktp-title glow">[ DIGITAL IDENTITY ]</div>
+      <div class="ktp-line"><span class="label">NAMA :</span> <span class="value">Tegar Yudha Murti</span></div>
+      <div class="ktp-line"><span class="label">TGL LAHIR :</span> <span class="value">21 Maret 2010</span></div>
+      <div class="ktp-line"><span class="label">ASAL :</span> <span class="value">Land Of Down</span></div>
+      <div class="ktp-line"><span class="label">SEKOLAH :</span> <span class="value">SMK Bhakti Nusantara</span></div>
+    </div>
+  </div>
+</body>
+</html>
